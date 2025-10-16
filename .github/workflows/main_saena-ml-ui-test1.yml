@@ -26,20 +26,20 @@ jobs:
 
       # 3️⃣ Install dependencies and build (inside Next.js folder)
       - name: Install dependencies
-        run: |
-          cd saena-ml-ui-chat
-          npm ci
+        run: npm ci
+         
+          
 
       - name: Build Next.js app
-        run: |
-          cd saena-ml-ui-chat
-          npm run build
+        run: npm run build
+         
+          
 
       # Optional: remove devDependencies to save space
       - name: Prune devDependencies
-        run: |
-          cd saena-ml-ui-chat
-          npm prune --production
+        run: npm prune --production
+          
+          
 
       - name: Login to Azure
         uses: azure/login@v2
@@ -58,3 +58,4 @@ jobs:
 
 
           
+
