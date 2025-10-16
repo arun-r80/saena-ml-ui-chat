@@ -51,5 +51,3 @@ jobs:
           app-name: 'saena-ml-ui-test1'
           slot-name: 'Production'
           package: .   # deploy current directory (root of repo)
-
-          
