@@ -18,7 +18,6 @@ jobs:
     steps:
       - name: Create empty folder
         run: mkdir empty
-             echo "cleanup placeholder" > empty/README.txt
              zip -r empty.zip empty/
      
   deploy:
@@ -46,6 +45,7 @@ jobs:
           package: 'empty.zip'
 
           
+
 
 
 
