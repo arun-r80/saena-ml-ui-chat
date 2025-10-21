@@ -1,3 +1,4 @@
+"use client";
 import HeaderBar from "@/app/ui/containers";
 
 export default function Page() {

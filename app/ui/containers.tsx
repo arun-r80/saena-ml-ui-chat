@@ -6,8 +6,12 @@ export default function HeaderBar() {
   return (
     <div className="flex flex-col justify-center bg-blue-500 rounded-lg h-24">
       <p className="font-bitcount text-center text-[20px]">
-        JIRABOT - Your JIRA Assistant
+        FormAssistant - Your JIRA Assistant
       </p>
     </div>
   );
+}
+
+export function ChatContainer() {
+  return;
 }

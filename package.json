@@ -5,13 +5,14 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start --port 80",
+    "start": "npm install serve@latest && npx serve@latest out",
     "lint": "eslint"
   },
   "dependencies": {
     "next": "15.5.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "serve": "^14.2.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
