@@ -33,7 +33,7 @@ function ChatMessages({
 }: {
   message: string;
   userType: string;
-}): JSX.Element {
+}): React.ReactNode {
   return (
     <div
       className={
