@@ -29,6 +29,17 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Deploy on Azure App Service using GitHub Actions
+
+To ensure seamless first deployment to Azure App Service, the following are recommended:
+(NextJS version - 15.5.4)
+
+- Ensure output attribute is defined as 'export' under next.config.ts
+- Ensure Deployment option is selected as GitHub during creation of App Service, with NodeJS as app platform
+- No startup commands were given under App Service settings ( App Service -> Settings -> Configuration)
+- start script in package.json was configured like this - "npm install serve@latest && npx serve@latest out"
+- Export to static files has most probably done the trick of bringing the site up, which can be verified by replicating the deployment in new App Service instance.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
